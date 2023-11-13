@@ -9,27 +9,25 @@ export class AppComponent {
   title = 'calculator';
 
   resultado: number = 0;
-  cifra2: number = 2;
-  cifra3: number = 3;
 
   numeros = {
-    numero1: 2,
-    numero2: 3,
+    numero1: 0,
+    numero2: 0,
   };
 
   sumar() {
-    this.resultado = this.cifra2 + this.cifra3;
+    this.resultado = this.numeros.numero1 + this.numeros.numero2;
   }
   restar() {
-    this.resultado = this.cifra2 - this.cifra3;
+    this.resultado = this.numeros.numero1 - this.numeros.numero2;
 
   }
   multiplicar() {
-    this.resultado = this.cifra2 * this.cifra3;
+    this.resultado = this.numeros.numero1 * this.numeros.numero2;
 
   }
   dividir() {
-    this.resultado = this.cifra2 / this.cifra3;
+    this.resultado = this.numeros.numero1 / this.numeros.numero2;
     this.resultado = Number(this.resultado.toFixed(2));
 
   }
